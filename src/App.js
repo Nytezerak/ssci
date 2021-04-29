@@ -1,21 +1,15 @@
-import React from "react"; 
-import Menu from "./components/Menu";
-import { Dashboard } from "./components/Dashboard";
-import './app.css';
-import { Layout } from 'antd';
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
 
-const { Header, Content } = Layout;
+import { BrowserRouter } from 'react-router-dom';
+import { Routes } from './Routes';
 
 function App() {
   return (
-    <Layout>
-      <Header style={{padding: 0}} className="Header">
-        <Menu />
-      </Header>
-      <Content>
-        <Dashboard />
-      </Content>
-    </Layout>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+
   );
 }
 
