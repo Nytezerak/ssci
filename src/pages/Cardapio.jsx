@@ -4,7 +4,7 @@ import Menu from '../components/Menu';
 import '../app.css';
 import { Layout } from 'antd';
 // eslint-disable-next-line import/no-named-as-default
-import DashboardCardapio from '../components/dashboardCardapio';
+import DashboardCardapio from '../components/DashboardCardapio';
 
 const { Header, Content } = Layout;
 

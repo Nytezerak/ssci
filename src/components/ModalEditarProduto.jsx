@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'antd';
 
-export const ModalCadastroItem = () => {
+export const ModalEditarItem = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const showModalCadastro = () => {
+  const showModalEditarItem = () => {
     setIsModalVisible(true);
   };
 
@@ -18,11 +18,11 @@ export const ModalCadastroItem = () => {
 
   return (
     <>
-      <Button type="primary" onClick={showModalCadastro}>
-        Open Modal
+      <Button type="text" onClick={showModalEditarItem}>
+        Cadastrar produto
       </Button>
       <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
+        <p>Some itens...</p>
         <p>Some contents...</p>
         <p>Some contents...</p>
       </Modal>

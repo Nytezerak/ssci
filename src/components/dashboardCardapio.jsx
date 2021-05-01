@@ -1,15 +1,15 @@
 import {
-  Table, Row, Col, Button,
+  Table, Row, Col,
 } from 'antd';
-import { DownloadOutlined } from '@ant-design/icons';
 import './css/dashboard.css';
 import { DpDownOrdemCardapio } from './DpDownOrdemCardapio';
-import { ModalDetalhesItem } from './ModalDetalhesItem';
+import { ModalCadastroCategoria } from './ModalCadastroCategoria';
+import { DpDownEditarProduto } from './DpDownEditarProduto';
 
 const dataSource = [
   {
     key: '1',
-    status: 'ooooooooooooooooooo',
+    status: 'Aberto',
     table: 1,
     startDate: '23/12/2020 19:25',
     total: 'R$ 20,00',
@@ -129,19 +129,19 @@ export function DashboardCardapio() {
               <DpDownOrdemCardapio />
             </Col>
 
-            <Col span={15} />
+            <Col span={14} />
 
             <Col span={2}>
-              <ModalDetalhesItem />
+              <ModalCadastroCategoria />
             </Col>
 
             <Col span={1} />
 
             <Col span={2}>
-              <Button type="primary" shape="round" icon={<DownloadOutlined />}>
-                Item
-              </Button>
+              <DpDownEditarProduto />
             </Col>
+
+            <Col span={1} />
           </Row>
 
         </Col>
