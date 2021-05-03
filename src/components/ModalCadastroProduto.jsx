@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'antd';
+import { InternoModalCadastroProduto } from './InternoModalCadastroProduto';
 
 export const ModalDetalhesItem = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -21,10 +22,8 @@ export const ModalDetalhesItem = () => {
       <Button type="text" onClick={showModalCadastro}>
         Cadastrar produto
       </Button>
-      <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some itens...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+      <Modal title="Cadastrar produto" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <InternoModalCadastroProduto />
       </Modal>
     </>
   );

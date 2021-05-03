@@ -228,7 +228,7 @@ export class DashCardapio extends React.Component {
             marginBottom: 16,
           }}
         >
-          Add a row
+          Adicionar linha
         </Button>
         <Table
           components={components}
