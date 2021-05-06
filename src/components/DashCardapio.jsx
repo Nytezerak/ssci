@@ -121,8 +121,8 @@ export class DashCardapio extends React.Component {
       },
       {
         title: 'Produto',
-        dataIndex: 'product',
-        id: 'product',
+        dataIndex: 'type',
+        id: 'type',
         width: '40%',
         editable: true,
       },

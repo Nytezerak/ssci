@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'antd';
-import { InternoModalEditarProduto } from './InternoModalEditarProduto copy';
+import { InternoModalEditarProduto } from './InternoModalEditarProduto';
 
 export const ModalEditarItem = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);

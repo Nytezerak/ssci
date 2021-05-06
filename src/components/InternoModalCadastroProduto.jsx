@@ -4,6 +4,7 @@ import {
   Col,
   Form, Input, Row, Select,
 } from 'antd';
+import { ModalCadastroRodape } from './ModalCadastroRodape';
 
 export function InternoModalCadastroProduto() {
   return (
@@ -37,6 +38,9 @@ export function InternoModalCadastroProduto() {
         <Input.TextArea placeholder="Descrição" />
       </Form.Item>
       <p>Complementos:</p>
+      <div className="complementosCadastro" style={{ overflow: 'auto', width: '100%', height: '100px' }}>
+        <ModalCadastroRodape />
+      </div>
     </Form>
   );
 }
