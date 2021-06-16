@@ -6,7 +6,7 @@ import React, {
   useContext, useState, useEffect, useRef,
 } from 'react';
 import {
-  Table, Input, Button, Popconfirm, Form,
+  Table, Input, Popconfirm, Form,
 } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -221,15 +221,6 @@ export class DashCardapio extends React.Component {
     });
     return (
       <div>
-        <Button
-          onClick={this.handleAdd}
-          type="primary"
-          style={{
-            marginBottom: 16,
-          }}
-        >
-          Adicionar linha
-        </Button>
         <Table
           components={components}
           rowClassName={() => 'editable-row'}
